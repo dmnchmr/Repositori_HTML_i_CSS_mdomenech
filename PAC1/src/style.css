@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--tipografia);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+/* --------------------------------------------------------- */
+/* ------roots--------------------------------------------- */
+/* ------------------------------------------------------- */
+:root {
+    --tipografia: "Belanosima", sans-serif;;
+    --negre: rgb(0, 0, 0);
+    --blanc: rgb(255, 255, 255);
+    --wine: rgb(133, 20, 75);
+    --wine-menu: rgb(133, 20, 75);
+    --beix: rgb(242, 242, 230);
+}
+
+/* ------------------------- */
+/* ---------header----------- */
+/* ------------------------- */
+header {
+    background-color: var(--wine-menu);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------- */
+/* ---------nav----------- */
+/* ------------------------- */
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1em;
+}
+
+/* logo */
+.logo-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-menu img {
+    width: 150px;
+    height: auto;
+}
+
+/* enllaços */
+.links-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-block: 1em;
+    list-style: none;
+}
+
+.links-menu a {
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+.links-menu a:hover {
+    color: var(--negre);
+}
+
+/* hero-img */
+.hero-img {
+    position: relative;
+    background-image: url('/img/copa-vi-fons-vinya.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--blanc);
+}
+
+/* body */
+body {
+    background-color: var(--blanc);
+}
