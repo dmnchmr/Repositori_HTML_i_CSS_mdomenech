@@ -31,31 +31,40 @@
     </header>
     <main>
         <div class="principal-img">
-            <h1>VINE A TASTAR LA EXPERIÈNCIA</h1>
-            <p>visita les vinyes amb sabor propi</p>
+            <h1>Reserva</h1>
         </div>
-        <div class="contenidor">
-            <a href="/src/reserva.html" class="first">
-                <div>
-                    <p class="titol">Reserva la teva visita</p>
-                    <p>Anima't i vine a visitar-nos!</p>
-                </div>
-            </a>
+        <form action="" method="post" novalidate>
+            <legend for="pack">Sel·lecciona el pack</legend>
+            <select id="packs" name="packs" required>
+                <option value="">----</option>
+                <option value="pack1">Pack Visita i Degustació</option>
+                <option value="pack2">Pack Cata</option>
+                <option value="pack3">Pack Complet (visita i cata)</option>
+            </select>
+            <br>
+        
+            <label for="numero">Indiqui el nombre de persones (mínim 2 persones):</label>
+            <input type="number" id="numero" name="persones" required />
+            <br>
+        
+            <label for="data">Data de la reserva:</label>
+            <input type="date" id="data" name="data" required />
+            <br>
+        
+            <label for="mail">e-mail de reserva:</label>
+            <input type="email" id="mail" name="mail" required />
+            <br>
+        
+            <label>
+                <input type="checkbox" name="politica" value="politica" required /> Acepto les condicions i política de privacitat.
+            </label>
+            <br>
+        
+            <p id="preu"></p>
             
-            <a href="/src\experiencies.html" class="second">
-                <div>
-                    <p class="titol">Descobreix les nostres experiències</p>
-                    <p>Informa't dels nostres serveis</p>
-                </div>
-            </a>
-            
-            <a href="/src\sobre_nosaltres.html" class="third">
-                <div>
-                    <p class="titol">La nostra història</p>
-                    <p>Conèix més sobre la vinya i els nostres vins</p>
-                </div>
-            </a>
-        </div>
+            <input type="submit" value="Fes la teva reserva"/>
+        </form>
+        
     </main>
     <footer>
         <div class="logo-menu">
@@ -73,6 +82,8 @@
                 <p><a href="#">Avís legal</a></p>
             </div>
     </footer>
-    <script src="./scripts.js"></script>
 </body>
+<script src="./scripts.js"></script>
 </html>
+
+<!-- Vins el Cep. (2025, January 29). Visita y maridaje de 5 quesos con vinos y cava. Enoturismo en Sant Sadurní (Barcelona). | Vins el Cep. Vins El Cep. https://vinselcep.com/es/producto/brunch-en-la-bodega/ -->
