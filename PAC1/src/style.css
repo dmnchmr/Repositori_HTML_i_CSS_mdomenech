@@ -25,13 +25,13 @@ main {
     --negre: rgb(0, 0, 0);
     --blanc: rgb(255, 255, 255);
     --wine: rgb(133, 20, 75);
-    --wine-menu: rgb(133, 20, 75);
+    --boto-hover: rgb(75, 13, 43);
     --beix: rgb(242, 242, 230);
 }
 
 /* --------- menu --------- */
 .menu {
-    background-color: var(--wine-menu);
+    background-color: var(--wine);
     position: fixed;
     top: 0;
     left: 0;
@@ -42,7 +42,6 @@ main {
     align-items: center;
     padding: 1em;
 }
-
 /* Logo */
 .logo-menu {
     display: flex;
@@ -53,18 +52,15 @@ main {
     width: 150px;
     height: auto;
 }
-
 /* -------- Hamburguesa i menú -------- */
 .menu-toggle {
     font-size: 1.5rem;
     color: var(--blanc);
     cursor: pointer;
 }
-
 .menu-toggle .fa-xmark {
     display: none;
 }
-
 .links-menu {
     display: none;
     flex-direction: column;
@@ -72,29 +68,24 @@ main {
     top: 60px;
     right: 0;
     width: 100%;
-    background-color: var(--wine-menu);
+    background-color: var(--wine);
     padding: 1em;
     text-align: center;
     transition: all 0.3s ease-in-out;
     list-style: none;
 }
-
 .links-menu li a {
     color: var(--blanc);
     text-decoration: none;
     line-height: 3em;
 
 }
-
 .links-menu.active {
     display: flex;
 }
-
-/* canvi d'incona*/
 .menu.open .fa-bars {
     display: none;
 }
-
 .menu.open .fa-xmark {
     display: inline;
 }
@@ -103,12 +94,12 @@ main {
 /* -----principal-img------ */
 /* ----------------------- */
 .principal-img {
-    background-image: url('/img/copa-vi-fons-vinya.jpg');
+    background-image: url('/img/copa-vi-fons-home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--blanc);
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +107,40 @@ main {
     text-align: center;
     text-shadow: 5px 5px 5px black;
 }
-
+/* ------------------------- */
+/* -----reserva-img----- */
+/* ----------------------- */
+.reserva-img {
+    background-image: url('/img/vinya_fons_reserva.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--blanc);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+/* ------------------------- */
+/* -----experiencies-img----- */
+/* ----------------------- */
+.experiencies-img {
+    background-image: url('/img/vinya_fons_experiencies.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--blanc);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
 /* ------------------------- */
 /* ---------main----------- */
 /* ------------------------- */
@@ -127,7 +151,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
 .contenidor a {
     color: var(--blanc);
     text-shadow: 5px 5px 5px black;
@@ -142,7 +165,6 @@ main {
     text-decoration: none;
     position: relative;
 }
-
 .contenidor a::before {
     content: "";
     position: absolute;
@@ -153,7 +175,6 @@ main {
     background-color: rgba(0, 0, 0, 0.4); 
     z-index: 1;
 }
-
 .contenidor a div {
     position: relative;
     z-index: 2;
@@ -162,35 +183,77 @@ main {
     align-items: center;
     justify-content: center;
 }
-
 .titol {
     font-size: 30px;
     text-align: center;
     color: var(--blanc);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 .first, .second, .third {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 40vh;
 }
-
-/* Assignació d'imatges */
 .first {
     background-image: url('/img/cata-vins.jpg');
 }
-
 .second {
     background-image: url('/img/vinya_raim.jpg');
 }
-
 .third {
     background-image: url('/img/vinya.jpg');
 }
+/* ------------------------- */
+/* -------reserva---------- */
+/* ----------------------- */
 
 
+/* ------------------------- */
+/* -----experiències------ */
+/* ----------------------- */
+.pack {
+    width: 85%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    margin: 1rem;
+}
+.pack .pack-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 1rem 0;
+}
+.pack img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+.pack form {
+    margin-top: 1rem;
+}
+.pack input[type="submit"] {
+    background-color: var(--wine);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.pack input[type="submit"]:hover {
+    background-color: var(--boto-hover);
+}
 /* ------------------------- */
 /* ---------footer----------- */
 /* ------------------------- */
@@ -198,7 +261,7 @@ footer {
     padding-block: 1em;
 }
 footer, footer div {
-    background-color: var(--wine-menu);
+    background-color: var(--wine);
     width: 100%;
     display: flex;
     flex-direction: column;

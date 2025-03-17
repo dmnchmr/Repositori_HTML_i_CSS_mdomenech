@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let numeroPersones = document.getElementById("numero");
 
     let preus = {
-        pack1: 20,
-        pack2: 30,
-        pack3: 45,
+        pack1: 25,
+        pack2: 40,
+        pack3: 60,
     };
 
     function actualitzarPreu() {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         inputs.forEach(input => {
             if (!input.value.trim()) {
                 valid = false;
-                input.style.border = "2px solid red";
+                input.style.border = "1px solid red";
             } else {
                 input.style.border = "";
             }
@@ -65,5 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
