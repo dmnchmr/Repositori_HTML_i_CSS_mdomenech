@@ -99,7 +99,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--blanc);
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +116,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--blanc);
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +133,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--blanc);
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,7 +207,58 @@ main {
 /* ------------------------- */
 /* -------reserva---------- */
 /* ----------------------- */
-
+.reserva-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    padding-bottom: 3em;
+}
+.intro-text {
+    font-size: 18px;
+    text-align: center;
+    color: #5a5a5a;
+    padding-inline: 1em;
+    padding-top: 1em;
+}
+fieldset {
+    width: 85%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    align-items: center;
+}
+form {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.title-form {
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], select {
+    color: gray;
+    height: 2rem;
+    padding: 8px;
+    font-size: 16px;
+}
+legend, label {
+    font-size: 20px;
+    padding-top: 1em;
+}
+label {
+    padding-bottom: 1em;
+}
+.reserva-form input[type="submit"] {
+    margin-bottom: 1em;
+    
+}
 
 /* ------------------------- */
 /* -----experiències------ */
@@ -219,12 +270,11 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
+    margin: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-color: #fff;
-    margin: 1rem;
 }
 .pack .pack-name {
     font-size: 16px;
@@ -241,7 +291,7 @@ main {
 .pack form {
     margin-top: 1rem;
 }
-.pack input[type="submit"] {
+input[type="submit"] {
     background-color: var(--wine);
     color: white;
     padding: 0.8rem 1.5rem;
@@ -251,7 +301,7 @@ main {
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-.pack input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: var(--boto-hover);
 }
 /* ------------------------- */

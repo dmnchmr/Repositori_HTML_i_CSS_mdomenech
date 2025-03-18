@@ -33,38 +33,37 @@
         <div class="reserva-img">
             <h1>Reserva</h1>
         </div>
-        <form action="" method="post" novalidate>
-            <legend for="pack">Sel·lecciona el pack</legend>
-            <select id="packs" name="packs" required>
-                <option value="">----</option>
-                <option value="pack1">Explora i Gaudeix: Visita + Tast Exclusiu</option>
-                <option value="pack2">Delícies Gourmet: Tast de Vins i Formatges</option>
-                <option value="pack3">L'Experiència Completa: Visita + Cata Premium</option>
-            </select>
-            <br>
+        <p class="intro-text">"Gaudeix d'una experiència única entre vinyes! Reserva ara la teva visita i descobreix els millors vins de la nostra bodega. Tria el pack que més t'encaixi i assegura't una experiència inoblidable."</p>
+        <div class="reserva-form">
+            <fieldset>
+                <form action="" method="post" novalidate>
+                    <legend class="title-form">Reserva la teva experiència</legend>
+                    <label for="packs">Sel·lecciona el pack</label>
+                    <select id="packs" name="packs" required>
+                        <option value="">----</option>
+                        <option value="pack1">Explora i Gaudeix: Visita + Tast Exclusiu</option>
+                        <option value="pack2">Delícies Gourmet: Tast de Vins i Formatges</option>
+                        <option value="pack3">L'Experiència Completa: Visita + Cata Premium</option>
+                    </select>
         
-            <label for="numero">Indiqui el nombre de persones (mínim 2 persones):</label>
-            <input type="number" id="numero" name="persones" required />
-            <br>
+                    <label for="numero">Nombre de persones (mínim 2):</label>
+                    <input type="number" id="numero" name="persones" required value="2" min="2"/>
         
-            <label for="data">Data de la reserva:</label>
-            <input type="date" id="data" name="data" required />
-            <br>
+                    <label for="data">Data de la reserva:</label>
+                    <input type="date" id="data" name="data" required />
         
-            <label for="mail">e-mail de reserva:</label>
-            <input type="email" id="mail" name="mail" required />
-            <br>
+                    <label for="email">e-mail de reserva:</label>
+                    <input type="email" id="email" name="email" required />
         
-            <label>
-                <input type="checkbox" name="politica" value="politica" required /> Acepto les condicions i política de privacitat.
-            </label>
-            <br>
+                    <label>
+                        <input type="checkbox" name="politica" value="politica" required /> Acepto les condicions i política de privacitat.
+                    </label>
         
-            <p id="preu"></p>
-            
-            <input type="submit" value="Fes la teva reserva"/>
-        </form>
-        
+                    <p id="preu"></p>
+                    <input type="submit" value="Fes la teva reserva"/>
+                </form>
+            </fieldset>
+        </div>        
     </main>
     <footer>
         <div class="logo-menu">
