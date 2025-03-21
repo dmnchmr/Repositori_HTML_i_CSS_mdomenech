@@ -163,7 +163,7 @@ main {
     text-shadow: 5px 5px 5px black;
 }
 /* ------------------------- */
-/* ---------main----------- */
+/* ---------index----------- */
 /* ------------------------- */
 .contenidor {
     width: 100%;
@@ -184,8 +184,11 @@ main {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    text-align: center;
     position: relative;
+    z-index: 2;
 }
+
 .contenidor a::before {
     content: "";
     position: absolute;
@@ -265,7 +268,7 @@ form {
 }
 input[type="text"], input[type="number"], input[type="date"], input[type="email"], select {
     color: gray;
-    height: 2rem;
+    height: 3rem;
     padding: 8px;
     font-size: 16px;
 }
@@ -275,6 +278,11 @@ legend, label {
 }
 label {
     padding-bottom: 1em;
+}
+#preu {
+    font-size: 18px;
+    color: var(--wine);
+    padding-bottom: .5em;
 }
 .reserva-form input[type="submit"] {
     margin-bottom: 1em;
@@ -343,6 +351,31 @@ input[type="submit"]:hover {
     object-fit: cover; 
 }
 /* ------------------------- */
+/* ---------link-div----------- */
+/* ------------------------- */
+.link-div {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+    font-size: 18px;
+}
+.link-div a {
+    color: var(--wine);
+}
+.link-div li {
+    width: 80%;
+    
+}
+.link-div a:hover {
+    color: #b47f8f;
+}
+/* ------------------------- */
 /* ---------footer----------- */
 /* ------------------------- */
 footer {
@@ -356,21 +389,104 @@ footer, footer div {
     align-items: center;
     justify-content: center;
     gap: .5em;
-/*     flex-direction: row;
-    align-items: center;
-    justify-content: space-between; */
-
 }
 footer a, footer p {
     color: var(--blanc);
     text-decoration: none;
 }
 .instaDesktop {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1em;
 }
-footer .social-media {
-    width: 30px;
-    height: 30px;
+.instaDesktop i {
+    font-size: 20px;
+}
+
+/* responsive tablet */
+@media (min-width: 768px) {
+    /* general */
+    header, footer {
+        font-size: 25px;
+    }
+    /* menú */
+    .menu a:hover {
+        text-decoration: underline ;
+    }
+    /* index */
+    .titol{
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    .contenidor-tablet {
+        padding-block: 5em;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+    .contenidor a {
+        margin: 1.5em;
+        padding: 1em;
+        width: 40%; 
+        aspect-ratio: 1/1;
+    }
+    .contenidor a:hover {
+        transform: scale(1.05);
+    }
+    /* reserva */
+    .contenidor-text-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .intro-text {
+        width: 50%;
+        text-align: center;
+    }
+    .reserva-form fieldset {
+        width: 50%;
+    }
+    /* experiències */
+    .pack {
+        width: 40%;
+    }
+    /* quiSom */
+    .tablet-quiSom {
+        display: flex;
+        justify-content: center;
+    }
+    .quiSomTxt  {
+        width: 50%;
+        font-size: 20px;
+    }
+    /* footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    footer p, footer .footerDesktop{
+        font-size: 16px;
+    }
+    .instaDesktop i {
+        font-size: 30px;
+    }
+    .footerDesktop p:hover {
+        text-decoration: underline;
+    }
+    .tablet-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/* responsive pc */
+@media (min-width: 992px) {
+
 }
