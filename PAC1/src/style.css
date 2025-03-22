@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--tipografia);
+    font-family: var(--tipografia-normal);
 }
 
 html, body {
@@ -16,13 +16,17 @@ html, body {
 main {
     flex: 1; 
 }
+h1, h2, h3, .menu li a, .boto {
+    font-family: var(--tipografia-titol) !important;
+}
 
 /* --------------------------------------------------------- */
 /* ------roots--------------------------------------------- */
 /* ------------------------------------------------------- */
 :root {
-    --tipografia: "Belanosima", sans-serif;;
-    --negre: rgb(0, 0, 0);
+    --tipografia-titol: "Belanosima", sans-serif;
+    --tipografia-normal: "Raleway", sans-serif;
+    --negre: rgb(14, 11, 11);
     --blanc: rgb(255, 255, 255);
     --wine: rgb(133, 20, 75);
     --boto-hover: rgb(75, 13, 43);
@@ -78,8 +82,8 @@ main {
     color: var(--blanc);
     text-decoration: none;
     line-height: 3em;
-
 }
+
 .links-menu.active {
     display: flex;
 }
@@ -163,6 +167,42 @@ main {
     text-shadow: 5px 5px 5px black;
 }
 /* ------------------------- */
+/* -----pack1-img------ */
+/* ----------------------- */
+.pack1-img {
+    padding-top: 4em;
+    background-image: url('/img/celler-pack1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--blanc);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+/* ------------------------- */
+/* -----pack2-img------ */
+/* ----------------------- */
+.pack2-img {
+    padding-top: 4em;
+    background-image: url('/img/copa_vi_quiSom.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--blanc);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+/* ------------------------- */
 /* ---------index----------- */
 /* ------------------------- */
 .contenidor {
@@ -212,6 +252,7 @@ main {
     text-align: center;
     color: var(--blanc);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: var(--tipografia-titol);
 }
 .first, .second, .third {
     background-size: cover;
@@ -334,6 +375,70 @@ input[type="submit"]:hover {
     background-color: var(--boto-hover);
 }
 /* ------------------------- */
+/* ---------pack1----------- */
+/* ------------------------- */
+.pack-txt {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pack-txt h3 {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.pack-txt div {
+    padding: 1em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pack-txt li {
+    list-style: circle;
+    text-align: left;
+}
+.pack-txt form {
+    padding-block: 3em;
+}
+.inclou li {
+    padding-block: .5em;
+}
+iframe {
+    width: 100%;
+}
+
+.pack-txt img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover; 
+    padding-top: 1em;
+}
+.tornar-experiencies {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.tornar-experiencies .goBack {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--wine);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.goBack:hover {
+    color: var(--boto-hover);
+    text-decoration: underline;
+}
+
+/* ------------------------- */
+/* ---------pack2----------- */
+/* ------------------------- */
+/* ------------------------- */
 /* ---------quiSom----------- */
 /* ------------------------- */
 .quiSomTxt {
@@ -364,6 +469,7 @@ input[type="submit"]:hover {
     margin: 1rem;
     text-align: justify;
     font-size: 18px;
+    word-wrap: break-word;
 }
 .link-div a {
     color: var(--wine);
@@ -404,7 +510,10 @@ footer a, footer p {
     font-size: 20px;
 }
 
-/* responsive tablet */
+/* ------------------------- */
+/* ---responsive tablet----- */
+/* ------------------------- */
+
 @media (min-width: 768px) {
     /* general */
     header, footer {
@@ -455,6 +564,30 @@ footer a, footer p {
     .pack {
         width: 40%;
     }
+    /* pack1 */
+    .pack-txt {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .pack-txt div {
+        width: 90%;
+    }
+    
+    .pack-txt img,
+    iframe {
+        width: 90%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .pack-txt form {
+        width: 90%;
+        text-align: center;
+    }
+    .tornar-experiencies .goBack {
+        padding: 10px 8em;
+    }
     /* quiSom */
     .tablet-quiSom {
         display: flex;
@@ -486,7 +619,35 @@ footer a, footer p {
     }
     
 }
-/* responsive pc */
+/* ------------------------- */
+/* ------responsive pc----- */
+/* ------------------------- */
 @media (min-width: 992px) {
+/* pack1 */
+.pack-txt {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.pack-txt div {
+    width: 70%;
+}
+
+.pack-txt img,
+iframe {
+    width: 60%;
+    height: 350px;
+    object-fit: cover; 
+}
+
+.pack-txt form {
+    width: 70%;
+    text-align: center;
+}
+.tornar-experiencies .goBack {
+    padding: 10px 25em;
+}
 }
