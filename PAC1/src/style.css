@@ -531,29 +531,7 @@ footer a, footer p {
     .menu a:hover {
         text-decoration: underline ;
     }
-    /* index */
-    .titol{
-        padding-bottom: 1em;
-        text-align: center;
-    }
-    .contenidor-tablet {
-        padding-block: 5em;
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 2em;
-    }
-    .contenidor a {
-        margin: 1.5em;
-        padding: 1em;
-        width: 40%; 
-        aspect-ratio: 1/1;
-    }
-    .contenidor a:hover {
-        transform: scale(1.05);
-    }
+    
     /* reserva */
     .contenidor-text-form {
         width: 100%;
@@ -631,31 +609,50 @@ footer a, footer p {
 /* ------responsive pc----- */
 /* ------------------------- */
 @media (min-width: 992px) {
-/* pack1 */
-.pack-txt {
-    max-width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pack-txt div {
-    width: 70%;
-}
-
-.pack-txt img,
-iframe {
-    width: 60%;
-    height: 350px;
-    object-fit: cover; 
-}
-
-.pack-txt form {
-    width: 70%;
-    text-align: center;
-}
-.tornar-experiencies .goBack {
-    padding: 10px 25em;
-}
+    /* index */
+    .titol{
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    .contenidor-tablet {
+        padding-block: 5em;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+    .contenidor a {
+        margin: 1.5em;
+        padding: 1em;
+        width: 40%; 
+        aspect-ratio: 1/1;
+    }
+    .contenidor a:hover {
+        transform: scale(1.05);
+    }
+    /* pack1 */
+    .pack-txt {
+        max-width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pack-txt div {
+        width: 70%;
+    }
+    .pack-txt img, iframe {
+        width: 60%;
+        height: 350px;
+        object-fit: cover; 
+    }
+    .pack-txt form {
+        width: 70%;
+        text-align: center;
+    }
+    .tornar-experiencies .goBack {
+        padding: 10px 25em;
+    }
 }
