@@ -19,7 +19,10 @@ main {
 h1, h2, h3, .menu li a, .boto {
     font-family: var(--tipografia-titol) !important;
 }
-
+a {
+    color: inherit;
+    text-decoration: none;
+}
 /* --------------------------------------------------------- */
 /* ------roots--------------------------------------------- */
 /* ------------------------------------------------------- */
@@ -212,7 +215,7 @@ h1, h2, h3, .menu li a, .boto {
     align-items: center;
     justify-content: center;
 }
-.contenidor a {
+.contenidor .first, .contenidor .second, .contenidor .third {
     color: var(--blanc);
     text-shadow: 5px 5px 5px black;
     margin: 1.5em;
@@ -229,7 +232,7 @@ h1, h2, h3, .menu li a, .boto {
     z-index: 2;
 }
 
-.contenidor a::before {
+.contenidor .first::before, .contenidor .second::before, .contenidor .third::before {
     content: "";
     position: absolute;
     top: 0;
@@ -361,7 +364,7 @@ label {
 .pack form {
     margin-top: 1rem;
 }
-input[type="submit"] {
+input[type="submit"], .boto {
     background-color: var(--wine);
     color: white;
     padding: 0.8rem 1.5rem;
@@ -370,9 +373,13 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    margin: 0.5em;
 }
-input[type="submit"]:hover {
+input[type="submit"]:hover, .boto:hover {
     background-color: var(--boto-hover);
+}
+.boto {
+    color: var(--blanc);
 }
 /* ------------------------- */
 /* ---------pack1----------- */
@@ -416,6 +423,7 @@ iframe {
     height: 30vh;
     object-fit: cover; 
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 .tornar-experiencies {
     text-align: left;
