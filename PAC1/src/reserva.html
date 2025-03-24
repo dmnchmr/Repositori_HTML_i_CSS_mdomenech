@@ -38,11 +38,11 @@
             <p class="intro-text">"Gaudeix d'una experiència única entre vinyes! Reserva ara la teva visita i descobreix els millors vins de la nostra bodega. Tria el pack que més t'encaixi i assegura't una experiència inoblidable."</p>
         </div>
         <div class="reserva-form">
-            <fieldset>
-                <form action="" method="" novalidate>
+            <form action="" method="" novalidate>
+                <fieldset>
                     <legend class="title-form">Reserva la teva experiència</legend>
                     <label for="packs">Sel·lecciona el pack</label>
-                    <select id="packs" name="packs" required>
+                    <select id="packs" name="packs" required aria-describedby="preu">
                         <option value="">----</option>
                         <option value="pack1">Explora i Gaudeix: Visita + Tast Exclusiu</option>
                         <option value="pack2">Delícies Gourmet: Tast de Vins i Formatges</option>
@@ -54,13 +54,14 @@
                     <input type="date" id="data" name="data" required />
                     <label for="email">e-mail de reserva:</label>
                     <input type="email" id="email" name="email" required />
-                    <label>
-                        <input type="checkbox" name="politica" value="politica" required /> Acepto les condicions i política de privacitat.
+                    <label for="acceptacio">
+                        <input type="checkbox" id="acceptacio" name="acceptacio" value="politica" required /> Accepto les condicions i política de privacitat.
                     </label>
                     <p id="preu"></p>
                     <input type="submit" value="Fes la teva reserva" class="boto"/>
-                </form>
-            </fieldset>
+                </fieldset>
+            </form>
+            
         </div>        
     </main>
     <footer>
@@ -78,9 +79,8 @@
                 <p><a href="#">Política de <i lang="en">cookies</i></a></p>
                 <p><a href="#">Avís legal</a></p>
             </div>
+        </div>
     </footer>
+    <script src="./scripts.js"></script>
 </body>
-<script src="./scripts.js"></script>
 </html>
-
-<!-- Vins el Cep. (2025, January 29). Visita y maridaje de 5 quesos con vinos y cava. Enoturismo en Sant Sadurní (Barcelona). | Vins el Cep. Vins El Cep. https://vinselcep.com/es/producto/brunch-en-la-bodega/ -->
