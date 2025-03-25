@@ -113,7 +113,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px var(--negre);
 }
 /* ------------------------- */
 /* -----reserva-img----- */
@@ -131,7 +131,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px var(--negre);
 }
 /* ------------------------- */
 /* -----experiencies-img----- */
@@ -149,7 +149,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px var(--negre);
 }
 /* ------------------------- */
 /* -----quiSom-img------ */
@@ -167,7 +167,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px var(--negre);
 }
 /* ------------------------- */
 /* -----pack1-img------ */
@@ -185,7 +185,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px var(--negre);
 }
 /* ------------------------- */
 /* -----pack2-img------ */
@@ -203,7 +203,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px var(--negre);
 }
 /* ------------------------- */
 /* ---------index----------- */
@@ -217,7 +217,7 @@ a {
 }
 .contenidor .first, .contenidor .second, .contenidor .third {
     color: var(--blanc);
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px var(--negre);
     margin: 1.5em;
     padding: 1em;
     width: 85%;
@@ -367,7 +367,7 @@ label {
 }
 input[type="submit"], .boto {
     background-color: var(--wine);
-    color: white;
+    color: var(--blanc);
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 5px;
