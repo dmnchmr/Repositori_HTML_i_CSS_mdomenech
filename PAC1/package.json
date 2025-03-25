@@ -1,6 +1,7 @@
 {
   "name": "repositori_html_i_css_mdomenech",
   "version": "1.0.0",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
