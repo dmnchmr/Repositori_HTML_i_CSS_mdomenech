@@ -2,8 +2,8 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const inputFolder = './img';
-const outputFolder = './dist/img';
+const inputFolder = '/img';
+const outputFolder = '/img/img_op';
 
 if (!fs.existsSync(outputFolder)) {
     fs.mkdirSync(outputFolder, { recursive: true });

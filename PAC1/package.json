@@ -7,7 +7,6 @@
     "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel src/index.html",
     "parcel:build": "parcel build src/index.html",
-    "move-images": "mkdir dist\\img && move dist\\*.jpg dist\\img\\ && move dist\\*.jpeg dist\\img\\ && move dist\\*.png dist\\img\\ && move dist\\*.webp dist\\img\\ && move dist\\*.avif dist\\img\\",
     "convert-webp": "node tools/convert-to-webp.js",
     "clean": "rimraf dist .parcel-cache"
   },
