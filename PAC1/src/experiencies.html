@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Pàgina de contingut de les experiències de Bacus Terra">
-        <link rel="icon" href="/img/monogram-hq.png">
+        <link rel="icon" href="/img/monogram-hq.svg">
         <title>Descobreix les nostres experiències</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,12 @@
     <header>
         <nav class="menu">
             <div class="logo-menu">
-                <a href="index.html"><img src="/img/bacus-terra-blanc.png?as=webp" alt="logotip bacus terra"></a>
+                <a href="index.html">
+                    <picture>
+                        <source srcset="/dist/img/bacus-terra-blanc.webp" type="image/webp">
+                        <img src="/img/bacus-terra-blanc.png" alt="Logotip Bacus Terra" width="150" height="auto" loading="lazy" decoding="async">
+                    </picture>
+                </a>
             </div>
             <a href="javascript:void(0)" class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
@@ -31,13 +36,17 @@
         </nav>
     </header>
     <main>
-        <div class="experiencies-img">
+        <div id="section-hero" class="experiencies-img">
             <h1>Descobreix les nostres experiències</h1>
         </div>
         <div class="contenidor contenidor-exp">
             <div class="pack">
                 <div class="">
-                    <img src="/img/pack1_vi_celler.jpg" alt="cop de vi a les vinyes">
+                    <picture>
+                        <source srcset="/img/pack1_vi_celler.jpg?as=webp" type="image/webp">
+                        <img src="/img/pack1_vi_celler.jpg" alt="copa de vi a les vinyes" width="150" height="auto" loading="lazy" decoding="async">
+                    </picture>
+                    
                     <p class="pack-name">Explora i Gaudeix: Visita + Tast de Vins</p>
                 </div>
                 <p>Vine a conèixer la nostra vinya i el nostre celler, i gaudeix d'un tast exclusiu dels nostres vins, una experiència única per als amants del vi.</p>
@@ -48,7 +57,10 @@
             </div>
             <div class="pack">
                 <div class="">
-                    <img src="/img/pack2_cata_vi.jpg?as=webp" alt="taula amb vins i formatges">
+                    <picture>
+                        <source srcset="/img/pack2_cata_vi.jpg?as=webp" type="image/webp">
+                        <img src="/img/pack2_cata_vi.jpg" alt="taula amb vins i formatges" width="150" height="auto" loading="lazy" decoding="async">
+                    </picture>
                     <p class="pack-name">Delícies Gourmet: Tast de Vins i Formatges</p>
                 </div>
                 <p>Descobreix els sabors més exquisits amb un brunch que combina els nostres vins amb una selecció de formatges gourmet.</p>
@@ -58,7 +70,10 @@
             </div>
             <div class="pack">
                 <div class="">
-                    <img src="/img/pack3_gourmet.jpg?as=webp" alt="">
+                    <picture>
+                        <source srcset="/img/pack3_gourmet.jpg?as=webp" type="image/webp">
+                        <img src="/img/pack3_gourmet.jpg" alt="cata de vins del pack 3" width="150" height="auto" loading="lazy" decoding="async">
+                    </picture>
                     <p class="pack-name">L'Experiència Completa: Visita + Cata Premium</p>
                 </div>
                 <p>Viu l'experiència completa amb una visita guiada a la vinya i una cata premium per descobrir els nostres vins més exclusius.</p>
@@ -71,7 +86,12 @@
     </main>
     <footer>
         <div class="logo-menu">
-            <a href="index.html"><img src="/img/bacus-terra-blanc.png?as=webp" alt="logotip bacus terra"></a>
+            <a href="index.html">
+                <picture>
+                    <source srcset="/dist/img/bacus-terra-blanc.webp" type="image/webp">
+                    <img src="/img/bacus-terra-blanc.png" alt="Logotip Bacus Terra" width="150" height="auto" loading="lazy" decoding="async">
+                </picture>
+            </a>
             <p>2025-2026. Mar Domènech</p>
         </div>
         <div class="footer-content">

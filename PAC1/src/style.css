@@ -98,11 +98,10 @@ a {
 }
 
 /* ------------------------- */
-/* -----principal-img------ */
+/* -----format hero-imgs------ */
 /* ----------------------- */
-.principal-img {
+#section-hero {
     padding-top: 4em;
-    background-image: url('/img/copa-vi-fons-home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,96 +113,42 @@ a {
     align-items: center;
     text-align: center;
     text-shadow: 5px 5px 5px var(--negre);
+}
+/* ------------------------- */
+/* -----principal-img------ */
+/* ----------------------- */
+.principal-img {
+    background-image: url('/dist/img/copa-vi-fons-home.webp');
 }
 /* ------------------------- */
 /* -----reserva-img----- */
 /* ----------------------- */
 .reserva-img {
-    padding-top: 4em;
-    background-image: url('/img/vinya_fons_reserva.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--blanc);
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 5px 5px 5px var(--negre);
+    background-image: url('/dist/img/vinya_fons_reserva.webp');
 }
 /* ------------------------- */
 /* -----experiencies-img----- */
 /* ----------------------- */
 .experiencies-img {
-    padding-top: 4em;
-    background-image: url('/img/vinya_fons_experiencies.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--blanc);
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 5px 5px 5px var(--negre);
+    background-image: url('/dist/img/vinya_fons_experiencies.webp');
 }
 /* ------------------------- */
 /* -----quiSom-img------ */
 /* ----------------------- */
 .quiSom-img {
-    padding-top: 4em;
-    background-image: url('/img/vinya_fons_quiSom.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--blanc);
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 5px 5px 5px var(--negre);
+    background-image: url('/dist/img/vinya_fons_quiSom.webp');
 }
 /* ------------------------- */
 /* -----pack1-img------ */
 /* ----------------------- */
 .pack1-img {
-    padding-top: 4em;
-    background-image: url('/img/celler-pack1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--blanc);
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 5px 5px 5px var(--negre);
+    background-image: url('/dist/img/celler-pack1.webp');
 }
 /* ------------------------- */
 /* -----pack2-img------ */
 /* ----------------------- */
 .pack2-img {
-    padding-top: 4em;
-    background-image: url('/img/copa_vi_quiSom.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--blanc);
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 5px 5px 5px var(--negre);
+    background-image: url('/dist/img/copa_vi_fons_pack2.webp');
 }
 /* ------------------------- */
 /* ---------index----------- */
@@ -264,14 +209,52 @@ a {
     height: 40vh;
 }
 .first {
-    background-image: url('/img/cata-vins.jpg');
+    background-image: url('/dist/img/cata-vins.webp');
 }
 .second {
-    background-image: url('/img/vinya_raim.jpg');
+    background-image: url('/dist/img/vinya_raim.webp');
 }
 .third {
-    background-image: url('/img/vinya.jpg');
+    background-image: url('/dist/img/vinya.webp');
 }
+.copa-vi-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em; 
+}
+.copa-vi {
+    display: inline-block;
+    overflow: hidden;
+    clip-path: polygon(50% 0%, 80% 20%, 100% 50%, 80% 80%, 50% 100%, 20% 80%, 0% 50%, 20% 20%);
+}
+.copa-vi img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+.grapes_svg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4em;
+    gap: 1em;
+}
+.grapes_svg img {
+    animation: rotation_grapes 10s linear infinite;
+}
+
+@keyframes rotation_grapes {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* ------------------------- */
 /* -------reserva---------- */
 /* ----------------------- */
@@ -333,7 +316,6 @@ label {
 .reserva-form input[type="submit"] {
     margin-bottom: 1em;
 }
-
 
 /* ------------------------- */
 /* -----experiències------ */
@@ -419,10 +401,13 @@ input[type="submit"]:hover, .boto:hover {
 iframe {
     width: 100%;
 }
+.pack1-foto img {
+    clip-path: circle(50% at 50% 50%);
+}
 
 .pack-txt img {
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
     object-fit: cover; 
     padding-top: 1em;
     padding-bottom: 1em;
@@ -560,12 +545,12 @@ footer a, footer p {
         width: 90%;
     }
     
-    .pack-txt img,
+/*     .pack-txt img,
     iframe {
         width: 90%;
         height: 300px;
         object-fit: cover;
-    }
+    } */
     
     .pack-txt form {
         width: 90%;
@@ -643,11 +628,11 @@ footer a, footer p {
     .pack-txt div {
         width: 70%;
     }
-    .pack-txt img, iframe {
+/*     .pack-txt img, iframe {
         width: 60%;
         height: 350px;
         object-fit: cover; 
-    }
+    } */
     .pack-txt form {
         width: 70%;
         text-align: center;
