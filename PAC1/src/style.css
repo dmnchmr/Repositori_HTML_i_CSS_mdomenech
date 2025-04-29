@@ -118,37 +118,37 @@ a {
 /* -----principal-img------ */
 /* ----------------------- */
 .principal-img {
-    background-image: url('/img/img_op/copa-vi-fons-home.webp');
+    background-image: url('/img/img_op/copa-vi-fons-home-800.webp');
 }
 /* ------------------------- */
 /* -----reserva-img----- */
 /* ----------------------- */
 .reserva-img {
-    background-image: url('/img/img_op/vinya_fons_reserva.webp');
+    background-image: url('/img/img_op/vinya_fons_reserva-800.webp');
 }
 /* ------------------------- */
 /* -----experiencies-img----- */
 /* ----------------------- */
 .experiencies-img {
-    background-image: url('/img/img_op/vinya_fons_experiencies.webp');
+    background-image: url('/img/img_op/vinya_fons_experiencies-800.webp');
 }
 /* ------------------------- */
 /* -----quiSom-img------ */
 /* ----------------------- */
 .quiSom-img {
-    background-image: url('/img/img_op/vinya_fons_quiSom.webp');
+    background-image: url('/img/img_op/vinya_fons_quiSom-800.webp');
 }
 /* ------------------------- */
 /* -----pack1-img------ */
 /* ----------------------- */
 .pack1-img {
-    background-image: url('/img/img_op/celler-pack1.webp');
+    background-image: url('/img/img_op/celler-pack1-800.webp');
 }
 /* ------------------------- */
 /* -----pack2-img------ */
 /* ----------------------- */
 .pack2-img {
-    background-image: url('/img/img_op/copa_vi_fons_pack2.webp');
+    background-image: url('/img/img_op/copa_vi_fons_pack2-800.webp');
 }
 /* ------------------------- */
 /* ---------index----------- */
@@ -195,6 +195,9 @@ a {
     align-items: center;
     justify-content: center;
 }
+.contenidor div p:last-of-type {
+    font-size: 14px;
+}
 .titol {
     font-size: 30px;
     text-align: center;
@@ -207,6 +210,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     height: 40vh;
+
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 .first {
     background-image: url('/img//img_op/cata-vins.webp');
@@ -217,6 +222,7 @@ a {
 .third {
     background-image: url('/img/img_op/vinya.webp');
 }
+
 .copa-vi-div {
     display: flex;
     justify-content: center;
@@ -401,9 +407,9 @@ input[type="submit"]:hover, .boto:hover {
 iframe {
     width: 100%;
 }
-.pack1-foto img {
+/* .pack1-foto img {
     clip-path: circle(50% at 50% 50%);
-}
+} */
 
 .pack-txt img {
     width: 100%;
@@ -445,7 +451,7 @@ iframe {
 }
 .quiSomTxt img {
     width: 100%; 
-    height: 300px; 
+    height: 50vh;
     object-fit: cover; 
 }
 /* ------------------------- */
@@ -512,6 +518,31 @@ footer a, footer p {
     header, footer {
         font-size: 25px;
     }
+/* -----principal-img------ */
+.principal-img {
+    background-image: url('/img/img_op/copa-vi-fons-home-1200.webp');
+}
+/* -----reserva-img----- */
+.reserva-img {
+    background-image: url('/img/img_op/vinya_fons_reserva-1200.webp');
+}
+/* -----experiencies-img----- */
+.experiencies-img {
+    background-image: url('/img/img_op/vinya_fons_experiencies-1200.webp');
+}
+/* -----quiSom-img------ */
+.quiSom-img {
+    background-image: url('/img/img_op/vinya_fons_quiSom-1200.webp');
+}
+/* -----pack1-img------ */
+.pack1-img {
+    background-image: url('/img/img_op/celler-pack1-1200.webp');
+}
+/* -----pack2-img------ */
+.pack2-img {
+    background-image: url('/img/img_op/copa_vi_fons_pack2-1200.webp');
+}
+
     /* menú */
     .menu a:hover {
         text-decoration: underline ;
@@ -594,6 +625,30 @@ footer a, footer p {
 /* ------responsive pc----- */
 /* ------------------------- */
 @media (min-width: 992px) {
+/* -----principal-img------ */
+.principal-img {
+    background-image: url('/img/img_op/copa-vi-fons-home-1600.webp');
+}
+/* -----reserva-img----- */
+.reserva-img {
+    background-image: url('/img/img_op/vinya_fons_reserva-1600.webp');
+}
+/* -----experiencies-img----- */
+.experiencies-img {
+    background-image: url('/img/img_op/vinya_fons_experiencies-1600.webp');
+}
+/* -----quiSom-img------ */
+.quiSom-img {
+    background-image: url('/img/img_op/vinya_fons_quiSom-1600.webp');
+}
+/* -----pack1-img------ */
+.pack1-img {
+    background-image: url('/img/img_op/celler-pack1-1600.webp');
+}
+/* -----pack2-img------ */
+.pack2-img {
+    background-image: url('/img/img_op/copa_vi_fons_pack2-1600.webp');
+}
     /* index */
     .titol{
         padding-bottom: 1em;
@@ -639,5 +694,8 @@ footer a, footer p {
     }
     .tornar-experiencies .goBack {
         padding: 10px 25em;
+    }
+    .quiSomTxt img {
+        height: 40vh;
     }
 }
