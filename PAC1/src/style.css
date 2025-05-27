@@ -129,37 +129,37 @@ a {
 /* -----principal-img------ */
 /* ----------------------- */
 .principal-img {
-    background-image: url('/img/img_op/copa-vi-fons-home-800.webp');
+    background-image: url('/img/img_op/copa-vi-fons-home-480.webp');
 }
 /* ------------------------- */
 /* -----reserva-img----- */
 /* ----------------------- */
 .reserva-img {
-    background-image: url('/img/img_op/vinya_fons_reserva-800.webp');
+    background-image: url('/img/img_op/vinya_fons_reserva-480.webp');
 }
 /* ------------------------- */
 /* -----experiencies-img----- */
 /* ----------------------- */
 .experiencies-img {
-    background-image: url('/img/img_op/vinya_fons_experiencies-800.webp');
+    background-image: url('/img/img_op/vinya_fons_experiencies-480.webp');
 }
 /* ------------------------- */
 /* -----quiSom-img------ */
 /* ----------------------- */
 .quiSom-img {
-    background-image: url('/img/img_op/vinya_fons_quiSom-800.webp');
+    background-image: url('/img/img_op/vinya_fons_quiSom-480.webp');
 }
 /* ------------------------- */
 /* -----pack1-img------ */
 /* ----------------------- */
 .pack1-img {
-    background-image: url('/img/img_op/celler-pack1-800.webp');
+    background-image: url('/img/img_op/celler-pack1-480.webp');
 }
 /* ------------------------- */
 /* -----pack2-img------ */
 /* ----------------------- */
 .pack2-img {
-    background-image: url('/img/img_op/copa_vi_fons_pack2-800.webp');
+    background-image: url('/img/img_op/copa_vi_fons_pack2-480.webp');
 }
 /* ------------------------- */
 /* ---------index----------- */
@@ -227,13 +227,13 @@ a {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 .first {
-    background-image: url('/img//img_op/cata-vins.webp');
+    background-image: url('/img//img_op/cata-vins-500.webp');
 }
 .second {
-    background-image: url('/img//img_op/vinya_raim.webp');
+    background-image: url('/img//img_op/vinya_raim-500.webp');
 }
 .third {
-    background-image: url('/img/img_op/vinya.webp');
+    background-image: url('/img/img_op/vinya-500.webp');
 }
 
 .copa-vi-div {
@@ -539,27 +539,27 @@ footer a, footer p {
     }
 /* -----principal-img------ */
 .principal-img {
-    background-image: url('/img/img_op/copa-vi-fons-home-1200.webp');
+    background-image: url('/img/img_op/copa-vi-fons-home-960.webp');
 }
 /* -----reserva-img----- */
 .reserva-img {
-    background-image: url('/img/img_op/vinya_fons_reserva-1200.webp');
+    background-image: url('/img/img_op/vinya_fons_reserva-960.webp');
 }
 /* -----experiencies-img----- */
 .experiencies-img {
-    background-image: url('/img/img_op/vinya_fons_experiencies-1200.webp');
+    background-image: url('/img/img_op/vinya_fons_experiencies-960.webp');
 }
 /* -----quiSom-img------ */
 .quiSom-img {
-    background-image: url('/img/img_op/vinya_fons_quiSom-1200.webp');
+    background-image: url('/img/img_op/vinya_fons_quiSom-960.webp');
 }
 /* -----pack1-img------ */
 .pack1-img {
-    background-image: url('/img/img_op/celler-pack1-1200.webp');
+    background-image: url('/img/img_op/celler-pack1-960.webp');
 }
 /* -----pack2-img------ */
 .pack2-img {
-    background-image: url('/img/img_op/copa_vi_fons_pack2-1200.webp');
+    background-image: url('/img/img_op/copa_vi_fons_pack2-960.webp');
 }
 
     /* menú */
