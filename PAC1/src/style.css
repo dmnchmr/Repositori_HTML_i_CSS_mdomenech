@@ -435,7 +435,7 @@ iframe {
     padding-top: 315px;
     margin: auto;
     cursor: pointer;
-    background-size: cover !important;
+    background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     position: relative;
