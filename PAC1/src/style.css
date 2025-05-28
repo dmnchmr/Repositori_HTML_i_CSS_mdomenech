@@ -430,6 +430,31 @@ iframe {
     width: 100%;
 }
 
+#iframeboxing {
+    width: 560px;
+    padding-top: 315px;
+    margin: auto;
+    cursor: pointer;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    position: relative;
+    overflow: hidden;
+}
+
+#iframeonclick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
 .pack-txt img {
     width: 100%;
     /* height: 30vh; */

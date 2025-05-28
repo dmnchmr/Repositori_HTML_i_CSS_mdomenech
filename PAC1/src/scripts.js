@@ -69,3 +69,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+/* videos */
+function load_on_iframe() {
+    const iframe = document.getElementById("iframeonclick");
+    iframe.classList.remove("hidden");
+    iframe.src = "https://www.youtube.com/embed/n5C5s6gJjcU?autoplay=1";
+}
+
+function load_on_iframe2() {
+    const iframe = document.getElementById("iframeonclick2");
+    iframe.classList.remove("hidden");
+    iframe.src = "https://www.youtube.com/embed/LcdM_shS3jo?si=i9GQRzwFwZKjBmjr";
+    document.getElementById("iframeboxing2").onclick = null;
+}
