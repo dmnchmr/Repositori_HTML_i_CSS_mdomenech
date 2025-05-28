@@ -430,19 +430,22 @@ iframe {
     width: 100%;
 }
 
-#iframeboxing {
-    width: 560px;
-    padding-top: 315px;
-    margin: auto;
+#iframeboxing, #iframeboxing2 {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    margin: 2rem auto; /* centrat horitzontal i separació vertical */
     cursor: pointer;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     position: relative;
     overflow: hidden;
+    border-radius: 8px; /* opcional, per fer-ho més polit */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* opcional */
 }
 
-#iframeonclick {
+#iframeonclick, #iframeonclick2 {
     position: absolute;
     top: 0;
     left: 0;
