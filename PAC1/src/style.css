@@ -453,8 +453,9 @@ iframe {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
+
 
 .pack-txt img {
     width: 100%;
