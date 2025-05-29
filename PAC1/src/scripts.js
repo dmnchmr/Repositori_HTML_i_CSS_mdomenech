@@ -71,14 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* videos */
-/* function load_on_iframe() {
+window.load_on_iframe = function () {
+    const box = document.getElementById("iframeboxing");
     const iframe = document.getElementById("iframeonclick");
-    iframe.classList.remove("hidden");
-    iframe.src = "https://www.youtube.com/embed/n5C5s6gJjcU?autoplay=1";
-}
+    if (iframe) {
+        iframe.src = "https://www.youtube.com/embed/n5C5s6gJjcU?autoplay=1";
+        iframe.classList.remove("hidden");
+        box.style.background = "none";
+    }
+};
 
-function load_on_iframe2() {
+window.load_on_iframe2 = function () {
+    const box = document.getElementById("iframeboxing2");
     const iframe = document.getElementById("iframeonclick2");
-    iframe.classList.remove("hidden");
-    iframe.src = "https://www.youtube.com/embed/LcdM_shS3jo?si=i9GQRzwFwZKjBmjr&autoplay=1";
-} */
+    if (iframe) {
+        iframe.src = "https://www.youtube.com/embed/XYZ?autoplay=1";
+        iframe.classList.remove("hidden");
+        box.style.background = "none";
+    }
+};
