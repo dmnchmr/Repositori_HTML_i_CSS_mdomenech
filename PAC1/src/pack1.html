@@ -37,7 +37,12 @@
     </header>
     <main>
         <div id="section-hero" class="pack1-img">
-            <img src="/img/img_op/celler-pack1-480.webp" alt="Copa de vi de fons" class="hero-img" fetchpriority="high" decoding="async" loading="eager">
+            <picture class="hero-img">
+                <source media="(min-width: 992px)" srcset="/img/img_op/celler-pack1-1600.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="/img/img_op/celler-pack1-960.webp" type="image/webp">
+                <source srcset="/img/img_op/celler-pack1-480.webp" type="image/webp">
+                <img src="/img/img_op/celler-pack1-480.webp" alt="Celler pack 1" class="hero-img" width="1600" height="600" fetchpriority="high" decoding="async" loading="eager">
+            </picture>
             <h1>Explora i Gaudeix: Visita + Tast de Vins</h1>
         </div>
         <div class="pack-txt">
