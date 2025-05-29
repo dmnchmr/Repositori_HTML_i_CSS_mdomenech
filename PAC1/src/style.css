@@ -101,6 +101,8 @@ a {
 /* -----format hero-imgs------ */
 /* ----------------------- */
 #section-hero {
+    position: relative;
+    overflow: hidden;
     padding-top: 4em;
     background-size: cover;
     background-position: center;
@@ -125,42 +127,16 @@ a {
         transform: translateY(0);
     }
 }
-/* ------------------------- */
-/* -----principal-img------ */
-/* ----------------------- */
-.principal-img {
-    background-image: url('/img/img_op/copa-vi-fons-home-480.webp');
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
-/* ------------------------- */
-/* -----reserva-img----- */
-/* ----------------------- */
-.reserva-img {
-    background-image: url('/img/img_op/vinya_fons_reserva-480.webp');
-}
-/* ------------------------- */
-/* -----experiencies-img----- */
-/* ----------------------- */
-.experiencies-img {
-    background-image: url('/img/img_op/vinya_fons_experiencies-480.webp');
-}
-/* ------------------------- */
-/* -----quiSom-img------ */
-/* ----------------------- */
-.quiSom-img {
-    background-image: url('/img/img_op/vinya_fons_quiSom-480.webp');
-}
-/* ------------------------- */
-/* -----pack1-img------ */
-/* ----------------------- */
-.pack1-img {
-    background-image: url('/img/img_op/celler-pack1-480.webp');
-}
-/* ------------------------- */
-/* -----pack2-img------ */
-/* ----------------------- */
-.pack2-img {
-    background-image: url('/img/img_op/copa_vi_fons_pack2-480.webp');
-}
+
 /* ------------------------- */
 /* ---------index----------- */
 /* ------------------------- */
