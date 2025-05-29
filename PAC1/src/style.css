@@ -540,30 +540,6 @@ footer a, footer p {
     header, footer {
         font-size: 25px;
     }
-/* -----principal-img------ */
-.principal-img {
-    background-image: url('/img/img_op/copa-vi-fons-home-960.webp');
-}
-/* -----reserva-img----- */
-.reserva-img {
-    background-image: url('/img/img_op/vinya_fons_reserva-960.webp');
-}
-/* -----experiencies-img----- */
-.experiencies-img {
-    background-image: url('/img/img_op/vinya_fons_experiencies-960.webp');
-}
-/* -----quiSom-img------ */
-.quiSom-img {
-    background-image: url('/img/img_op/vinya_fons_quiSom-960.webp');
-}
-/* -----pack1-img------ */
-.pack1-img {
-    background-image: url('/img/img_op/celler-pack1-960.webp');
-}
-/* -----pack2-img------ */
-.pack2-img {
-    background-image: url('/img/img_op/copa_vi_fons_pack2-960.webp');
-}
 
     /* menú */
     .menu a:hover {
@@ -655,30 +631,7 @@ footer a, footer p {
 /* ------responsive pc-gran----- */
 /* ------------------------- */
 @media (min-width: 992px) {
-/* -----principal-img------ */
-.principal-img {
-    background-image: url('/img/img_op/copa-vi-fons-home-1600.webp');
-}
-/* -----reserva-img----- */
-.reserva-img {
-    background-image: url('/img/img_op/vinya_fons_reserva-1600.webp');
-}
-/* -----experiencies-img----- */
-.experiencies-img {
-    background-image: url('/img/img_op/vinya_fons_experiencies-1600.webp');
-}
-/* -----quiSom-img------ */
-.quiSom-img {
-    background-image: url('/img/img_op/vinya_fons_quiSom-1600.webp');
-}
-/* -----pack1-img------ */
-.pack1-img {
-    background-image: url('/img/img_op/celler-pack1-1600.webp');
-}
-/* -----pack2-img------ */
-.pack2-img {
-    background-image: url('/img/img_op/copa_vi_fons_pack2-1600.webp');
-}
+
     /* index */
     .titol{
         padding-bottom: 1em;
